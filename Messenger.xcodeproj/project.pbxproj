@@ -13,6 +13,7 @@
 		5688C9B827BD2B6500EB2606 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5688C9B727BD2B6500EB2606 /* VideoPlayerViewController.swift */; };
 		5688C9BA27BD2B8100EB2606 /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5688C9B927BD2B8100EB2606 /* NewConversationViewController.swift */; };
 		5688C9BC27BD2B9800EB2606 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5688C9BB27BD2B9800EB2606 /* ProfileViewController.swift */; };
+		5688C9BF27BD32ED00EB2606 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5688C9BE27BD32ED00EB2606 /* Extensions.swift */; };
 		56E267AF27B7FE11000760E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E267AE27B7FE11000760E4 /* AppDelegate.swift */; };
 		56E267B127B7FE11000760E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E267B027B7FE11000760E4 /* SceneDelegate.swift */; };
 		56E267B327B7FE11000760E4 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E267B227B7FE11000760E4 /* ConversationsViewController.swift */; };
@@ -28,6 +29,7 @@
 		5688C9B727BD2B6500EB2606 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
 		5688C9B927BD2B8100EB2606 /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
 		5688C9BB27BD2B9800EB2606 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		5688C9BE27BD32ED00EB2606 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		56E267AB27B7FE11000760E4 /* Messenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Messenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56E267AE27B7FE11000760E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56E267B027B7FE11000760E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,8 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				56E267B227B7FE11000760E4 /* ConversationsViewController.swift */,
-				5688C9B127BD2B1E00EB2606 /* LoginViewController.swift */,
-				5688C9B327BD2B2D00EB2606 /* RegisterViewController.swift */,
+				5688C9BD27BD2C5000EB2606 /* login */,
 				5688C9B527BD2B5500EB2606 /* PhotoViewerViewController.swift */,
 				5688C9B727BD2B6500EB2606 /* VideoPlayerViewController.swift */,
 				5688C9B927BD2B8100EB2606 /* NewConversationViewController.swift */,
@@ -91,6 +92,7 @@
 			children = (
 				56E267AE27B7FE11000760E4 /* AppDelegate.swift */,
 				56E267B027B7FE11000760E4 /* SceneDelegate.swift */,
+				5688C9BE27BD32ED00EB2606 /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -102,6 +104,15 @@
 				56E267B927B7FE12000760E4 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		5688C9BD27BD2C5000EB2606 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				5688C9B127BD2B1E00EB2606 /* LoginViewController.swift */,
+				5688C9B327BD2B2D00EB2606 /* RegisterViewController.swift */,
+			);
+			path = login;
 			sourceTree = "<group>";
 		};
 		56E267A227B7FE11000760E4 = {
@@ -209,6 +220,7 @@
 				5688C9BA27BD2B8100EB2606 /* NewConversationViewController.swift in Sources */,
 				56E267B327B7FE11000760E4 /* ConversationsViewController.swift in Sources */,
 				5688C9B827BD2B6500EB2606 /* VideoPlayerViewController.swift in Sources */,
+				5688C9BF27BD32ED00EB2606 /* Extensions.swift in Sources */,
 				56E267AF27B7FE11000760E4 /* AppDelegate.swift in Sources */,
 				5688C9BC27BD2B9800EB2606 /* ProfileViewController.swift in Sources */,
 				56E267B127B7FE11000760E4 /* SceneDelegate.swift in Sources */,
@@ -380,7 +392,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -410,7 +422,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
